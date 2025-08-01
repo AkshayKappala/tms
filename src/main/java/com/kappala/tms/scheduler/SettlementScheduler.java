@@ -2,9 +2,11 @@ package com.kappala.tms.scheduler;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
 
 import com.kappala.tms.service.ITransactionService;
 
+@Component
 public class SettlementScheduler {
     @Autowired
     private ITransactionService transactionService;
