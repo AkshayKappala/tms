@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.kappala.tms.persistence.model.Transaction;
@@ -12,6 +13,7 @@ import com.kappala.tms.persistence.model.TransactionState;
 import com.kappala.tms.persistence.repository.ITransactionRepository;
 import com.kappala.tms.service.ITransactionService;
 
+@Service
 public class TransactionService implements ITransactionService {
 
     @Autowired
